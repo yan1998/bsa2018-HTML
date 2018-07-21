@@ -1,5 +1,6 @@
 body{
 	max-width: 1200px;
+	text-align: center;
 }
  .wrapper {
   display: flex;  
@@ -24,11 +25,14 @@ header {
 #icons-wrapper{
 	display: flex;
 }
-.icons{
+.icons, .icons2{
 	height: 30px;
 	margin-left:10px;
 }
 .icons:hover{
+	opacity:0.2;
+}
+.icons2:hover{
 	opacity:0.2;
 }
 .search{
@@ -45,17 +49,64 @@ header {
 .nav-element:hover{
 	background-color:silver; 
 }
+.social{
+	text-align: center;
+}
 .footer {
   background: lightgreen;
 }
-
 .main {
   text-align: left;
   background: deepskyblue;
+  display: flex;
+    flex-flow: row wrap;
 }
-
+.post{
+	margin: 10px;
+	text-align: center;
+}
+.post>img{
+	width: 250px;
+}
+.publicationDate{
+	font-size: 15px;
+	margin: 0px;
+	color:green;
+}
+.title{
+	margin-top:5px;
+	font-size: 20px;
+}
+.rating{
+	text-align: right;
+}
 .aside-2 {
+	text-align: left;
   background: hotpink;
+}
+p>.author{
+	padding-left:20px; 
+}
+.authorPhoto{
+	width:100px;
+	float: left;
+}
+.subscribe{
+	text-align: center;
+}
+.search2{
+	text-align: center;
+}
+.tags{
+	text-align: center;
+}
+.tag{
+	font-size: 15px;
+	padding: 10px; 
+}
+.tag:hover{
+	cursor: pointer;
+	color:green;
 }
 @media(max-width: 987px) {
   	.icons{
